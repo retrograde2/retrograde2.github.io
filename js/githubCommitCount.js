@@ -1,24 +1,18 @@
 /*
  Copyright (C) Jake Hurd 2023
  Let's play fetch!
- Distributed under the MIT License (license terms are at http://opensource.org/licenses/MIT).
- */
-
-// githubCommitCount.js
+*/
 
 (function() {
-    // Define the plugin function
     window.githubCommitCount = function(username, repository, branch, elementId) {
         const repoInfoUrl = `https://api.github.com/repos/${username}/${repository}`;
         const commitUrl = `https://api.github.com/repos/${username}/${repository}/commits?sha=${branch}&per_page=1`;
 
-        // Fetch repository info from GitHub API
         fetch(repoInfoUrl)
             .then(response => response.json())
             .then(repoInfo => {
                 const lastUpdated = new Date(repoInfo.pushed_at).toLocaleString();
 
-                // Fetch commit data from GitHub API
                 fetch(commitUrl)
                     .then(response => {
                         const linkHeader = response.headers.get('Link');

@@ -1,6 +1,5 @@
 <div align="center">
   <h1>RETR0GR4D3.GITHUB.IO</h1>
-  <img src="https://img.shields.io/badge/licence-MIT-red" alt="Licence">
   <img src="https://img.shields.io/badge/HTML-red" alt="HTML">
   <img src="https://img.shields.io/badge/JAVASCRIPT-red" alt="Javascript">
   <img src="https://img.shields.io/badge/CSS-red" alt="CSS">

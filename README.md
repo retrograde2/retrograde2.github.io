@@ -7,7 +7,7 @@
 </div>
 <div align="center">
   <h3>VERSION 6</h3>
-  <p>Now a solo project. Version 7 in the works.</p>
+  <p>Now a solo project. Backup of the old site.</p>
 </div>
 <div align="center">
   <h3 href="https://github.com/retr0gr4d3/retr0gr4d3.github.io/graphs/contributors">🫂 Contributors (Pre v3)<br><img src="https://contrib.rocks/image?repo=retr0gr4d3/retr0gr4d3.github.io"></h3>

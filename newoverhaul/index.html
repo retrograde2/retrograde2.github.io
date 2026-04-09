@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Newoverhaul hub — Retrograde site redesign preview (Version Seven).">
+	<title>New Overhaul — Seven</title>
+	<link rel="icon" type="image/png" href="/images/R.png">
+	<!--
+		Design tokens (shared across newoverhaul):
+		--color-accent: #d4000b
+		--color-bg: #191919
+		--color-surface: #1c1c1c
+		--color-text: ~#e8e8e8 / muted grays for secondary
+	-->
+	<style>
+		:root {
+			--color-accent: #d4000b;
+			--color-bg: #191919;
+			--color-surface: #1c1c1c;
+			--color-text: #e8e8e8;
+			--color-muted: #9a9a9a;
+		}
+		*, *::before, *::after { box-sizing: border-box; }
+		body {
+			margin: 0;
+			min-height: 100vh;
+			font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+			background: var(--color-bg);
+			color: var(--color-text);
+			line-height: 1.5;
+		}
+		a:focus-visible {
+			outline: 2px solid var(--color-accent);
+			outline-offset: 3px;
+		}
+		.wrap {
+			max-width: 42rem;
+			margin: 0 auto;
+			padding: 2rem 1.25rem 4rem;
+		}
+		h1 {
+			font-size: clamp(1.5rem, 4vw, 2rem);
+			font-weight: 700;
+			letter-spacing: 0.04em;
+			color: var(--color-accent);
+			margin: 0 0 0.5rem;
+		}
+		p.lead {
+			color: var(--color-muted);
+			margin: 0 0 2rem;
+		}
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		li {
+			margin-bottom: 1rem;
+			padding: 1rem 1.25rem;
+			background: var(--color-surface);
+			border: 1px solid color-mix(in srgb, var(--color-accent) 25%, transparent);
+			border-radius: 6px;
+		}
+		li a {
+			color: var(--color-text);
+			font-weight: 600;
+			text-decoration: none;
+		}
+		li a:hover {
+			color: var(--color-accent);
+			text-decoration: underline;
+		}
+		li p {
+			margin: 0.35rem 0 0;
+			font-size: 0.95rem;
+			color: var(--color-muted);
+		}
+		.back {
+			margin-top: 2.5rem;
+			padding-top: 1.5rem;
+			border-top: 1px solid color-mix(in srgb, var(--color-text) 15%, transparent);
+		}
+		.back a { color: var(--color-accent); }
+	</style>
+</head>
+<body>
+	<main class="wrap">
+		<h1>New Overhaul</h1>
+		<p class="lead">Version Seven: Fresh new CSS, homepage, and 404.</p>
+		<ul>
+			<li>
+				<a href="./seven/index.html">Version Seven Index</a>
+				<p>Primary redesign preview.</p>
+			</li>
+			<li>
+				<a href="./seven/404.html">Version Seven 404</a>
+				<p>404 page for the new version.</p>
+			</li>
+		</ul>
+		<p class="back"><a href="https://retr0.gr4d3.uk/">Back to site home</a></p>
+	</main>
+</body>
+</html>
